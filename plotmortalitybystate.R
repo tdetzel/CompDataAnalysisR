@@ -8,5 +8,5 @@ plotmortalitybystate<-function() {
   state<-outcome2$State
   par(las=2)
   statebymedian<-reorder(state, death, median)
-  boxplot(death~statebymedian, ylab="30-day Death Rate", main="Heart Attack 30-day Death Rate by State")
+  boxplot(death~statebymedian, ylab="30-day Death Rate", main="Heart Attack 30-day Death Rate by State", cex.axis=0.6)
 }
