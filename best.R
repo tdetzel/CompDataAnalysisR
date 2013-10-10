@@ -18,6 +18,7 @@ best <- function(state, outcome) {
   fieldidx<-match(outcome, outcomes)
   data<-subset(data, data$State==state)
   data[, columns[[fieldidx]]]<-as.numeric(data[, columns[[fieldidx]]])
+  data<-subset(data, !is.na(data[, columns[[fieldidx]]]))
   sorted.data<-data[order(data[, columns[[fieldidx]]], data$Hospital.Name), ]
   sorted.data$Hospital.Name[1]
 }
