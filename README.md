@@ -1,4 +1,4 @@
 CompDataAnalysisR
 =================
 
-Codes that I wrote for the Coursera's course "Computing for Data Analysis" by Roger Peng
+Code written by Kwan-Yuet Ho, Ph.D., Coursera's course "Computing for Data Analysis" by Roger Peng
